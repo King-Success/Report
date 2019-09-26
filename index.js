@@ -29,7 +29,7 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// connect app to routes
+// connect app to routese
 app.use(routes);
 
 // / catch 404 and forward to error handler
