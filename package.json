@@ -1,0 +1,40 @@
+{
+  "name": "mckinsey-fullstack",
+  "version": "1.0.0",
+  "description": "McKinsey opportunity in Berlin - coding challenge solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node ./index.js"
+  },
+  "keywords": [
+    "McKinsey",
+    "Berlin",
+    "code",
+    "challenge"
+  ],
+  "author": "Edwin Ikechukwu",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-messages": "^1.0.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-react": "^7.14.3",
+    "nodemon": "^1.19.2"
+  }
+}

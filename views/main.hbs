@@ -1,0 +1,25 @@
+<div class="card">
+    {{#each reports as |report|}}
+    {{#isEq report.state "OPEN"}}
+    <div class="grid {{#if report.blocked}}disabled{{/if}}" data-grid-{{report.id}}="">
+        <div class="col col--lg">
+            <ul>
+                <li>Id: {{ report.id }}</li>
+                <li data-state-{{report.id}}="">State: {{ report.state }}</li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </div>
+        <div class="col col--lg">
+            <ul>
+                <li>Type: {{ report.payload.reportType }}</li>
+                <li>Message: {{ report.payload.message }}</li>
+            </ul>
+        </div>
+        <div class="col buttons">
+            <button class="block" data-id="{{report.id}}">Block</button>
+            <button class="resolve" data-id="{{report.id}}">Resolve</button>
+        </div>
+    </div>
+    {{/isEq}}
+    {{/each}}
+</div>
